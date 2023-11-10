@@ -36,11 +36,11 @@ class LoadCSVTests(unittest.TestCase):
         ]
 
     def test_load_csv_file(self):
-        result = weather.load_data_from_csv("tests/data/example_one.csv")
+        result = weather.load_data_from_csv("/Users/sahar/Projects/SheCodesplus-weather_project/tests/data/example_one.csv")
         self.assertListEqual(result, self.example_one)
 
-        result = weather.load_data_from_csv("tests/data/example_two.csv")
+        result = weather.load_data_from_csv("/Users/sahar/Projects/SheCodesplus-weather_project/tests/data/example_two.csv")
         self.assertListEqual(result, self.example_two)
 
-        result = weather.load_data_from_csv("tests/data/example_three.csv")
+        result = weather.load_data_from_csv("/Users/sahar/Projects/SheCodesplus-weather_project/tests/data/example_three.csv")
         self.assertListEqual(result, self.example_three)

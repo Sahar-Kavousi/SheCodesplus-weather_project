@@ -36,19 +36,19 @@ class GenerateDailySummaryTests(unittest.TestCase):
         ]
 
     def test_generate_summary_example_one(self):
-        with open("tests/expected_output/example_one_daily_summary.txt", encoding="utf8") as txt_file:
+        with open("/Users/sahar/Projects/SheCodesplus-weather_project/tests/expected_output/example_one_daily_summary.txt", encoding="utf8") as txt_file:
             expected_result = txt_file.read()
         result = weather.generate_daily_summary(self.example_one)
         self.assertEqual(expected_result, result)
 
     def test_generate_summary_example_two(self):
-        with open("tests/expected_output/example_two_daily_summary.txt", encoding="utf8") as txt_file:
+        with open("/Users/sahar/Projects/SheCodesplus-weather_project/tests/expected_output/example_two_daily_summary.txt", encoding="utf8") as txt_file:
             expected_result = txt_file.read()
         result = weather.generate_daily_summary(self.example_two)
         self.assertEqual(expected_result, result)
 
     def test_generate_summary_example_three(self):
-        with open("tests/expected_output/example_three_daily_summary.txt", encoding="utf8") as txt_file:
+        with open("/Users/sahar/Projects/SheCodesplus-weather_project/tests/expected_output/example_three_daily_summary.txt", encoding="utf8") as txt_file:
             expected_result = txt_file.read()
         result = weather.generate_daily_summary(self.example_three)
         self.assertEqual(expected_result, result)
